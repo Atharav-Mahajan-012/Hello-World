@@ -4,11 +4,11 @@
 
 #2 To check the IP address of device:
    
-   Open command prompt > Enter the command Ipconfig 
+   Open command prompt > Enter the command IPconfig 
  
 #3 To find DNS address of your computer :
 
-   Open command prompt > Enter the command Ipconfig/all
+   Open command prompt > Enter the command IPconfig/all
    
    In order to change it :
    Open settings > go to Network & Internet > Click on wifi adapter properties > Change the DNS server assignment
