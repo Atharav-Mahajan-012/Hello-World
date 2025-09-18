@@ -12,5 +12,13 @@
    
    In order to change it :
    Open settings > go to Network & Internet > Click on wifi adapter properties > Change the DNS server assignment
+   
+#4  Publicly available DNS :
+    Some of popular free DNS server includes:
+   - Google DNS: `8.8.8.8`, `8.8.4.4`  
+   - Cloudflare DNS: `1.1.1.1`, `1.0.0.1`  
+   - OpenDNS: `208.67.222.222`, `208.67.220.220'
+   
+    
 
 
