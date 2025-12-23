@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .form-box {
+            width: 40%;
+            margin: auto;
+            background: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 6px;
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box" style="color: white;">
+        <h2>Student Feedback Form</h2>
+        <form action="#" method="post">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" name="roll" required>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <br><br>
+            <label>Subjects Liked:</label><br>
+            <input type="checkbox" id="html" name="subjects" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="subjects" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" name="subjects" value="javascript">
+            <label for="javascript">JS</label>
+            <input type="checkbox" id="php" name="subjects" value="php">
+            <label for="php">PHP</label>
+            <input type="checkbox" id="python" name="subjects" value="python">
+            <label for="python">Python</label>
+
+            <br><br>
+            <label for="rating">Course Rating:</label>
+            <select id="rating" name="rating">
+                <option value="excellent">Excellent</option>
+                <option value="verygood">Very Good</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+            </select>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4"></textarea>
+
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>

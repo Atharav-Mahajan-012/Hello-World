@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squaring and Cubing</title>
+    <style>
+        table, tr, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Square</th>
+                <th>Cube</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added by JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        let tableBody = document.querySelector("#myTable tbody");
+        let i = 0;
+        let interval = setInterval(function () {
+            if (i > 10) {
+                clearInterval(interval);
+                return;
+            }
+
+            let row = document.createElement('tr');
+
+            let td1 = document.createElement('td');
+            td1.innerText = i;
+
+            let td2 = document.createElement('td');
+            td2.innerText = i * i;
+
+            let td3 = document.createElement('td');
+            td3.innerText = i * i * i;
+
+            row.appendChild(td1);
+            row.appendChild(td2);
+            row.appendChild(td3);
+            tableBody.appendChild(row);
+            i++;
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Count</title>
+</head>
+<body>
+    <h1>Welcome to Our Website!</h1>
+    <p>We are glad to have you here.</p>
+    <h2>Visitor Count:</h2>
+    <p>Total number of visitors: <span id="visitorCount"></span></p>
+    <h2>Today's Date: <span id="todayDate"></span></h2>
+
+    <script>
+        // Fetch visitor count from PHP
+        fetch('count.php')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('visitorCount').innerText = data;
+            });
+
+        // Display today's date
+        const today = new Date();
+        const dateStr = today.getDate() + "-" + (today.getMonth() + 1) + "-" + today.getFullYear();
+        document.getElementById('todayDate').innerText = dateStr;
+    </script>
+</body>
+</html>

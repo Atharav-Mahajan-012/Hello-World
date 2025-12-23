@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>HELLO</div>
+    <script>
+        let ele = document.body.children[0];
+        let mySize = 20;
+        let growing = true;
+
+        function growShrink() {
+            if (growing) {
+                mySize = mySize + 2;
+                ele.innerText = "Growing";
+                ele.style.fontSize = mySize + "px";
+                ele.style.color = "red";
+                if (mySize > 200) {
+                    growing = false;
+                }
+            } else {
+                mySize = mySize - 2;
+                ele.innerText = "Shrinking";
+                ele.style.fontSize = mySize + "px";
+                ele.style.color = "blue";
+                if (mySize < 20) {
+                    growing = true;
+                }
+            }
+        }
+
+        setInterval(growShrink, 100);
+    </script>
+</body>
+</html>

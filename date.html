@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Display Today's Date</title>
+</head>
+<body>
+    <h2>Today's Date</h2>
+    <p id="date"></p>
+    <script>
+        // Get current date
+        var today = new Date();
+
+        // Extract day, month, and year
+        var day = today.getDate();
+        var month = today.getMonth() + 1; // Months start from 0
+        var year = today.getFullYear();
+
+        // Display date in DD / MM / YYYY format
+        document.getElementById("date").innerHTML = day + " / " + month + " / " + year;
+    </script>
+</body>
+</html>
